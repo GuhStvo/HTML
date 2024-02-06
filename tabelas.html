@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Trbalhando tabelas</title>
+</head>
+<body>
+    
+    <h1>Trabalhando com tabelas</h1>
+    <p>
+        No HTML os dados tabulares são aqueles que podem ser representados visualmente em forma de tabela.
+    </p>
+    <p>
+        A elaboração dee uma tabela consiste em uma combinação de linhas e colunas, resultando em uma froma objetiva e ordena de expor as informações.
+    </p>
+    <h3>Tabela simples:</h3> <!-- Tabela simples -->
+
+    <table border="2"> 
+        <!-- "tr"(table row) = Linhas / "td"(table data) = Células -->
+        <tr>
+            <td>Violão</td>
+            <td>Guitarra</td>
+        </tr>
+        <tr>
+            <td>Violino</td>
+            <td>Piano</td>
+        </tr>
+    </table>
+
+    <h3>Tabela com título</h3>  <!-- Tabela com título -->
+    <table border="2">
+            <!-- "th"(Table Header) = Título da coluna  -->
+            <th>Instrumentos de corda</th>
+            <th>Instrumentos de sopro</th>
+            <tr>
+                <td>Violino</td>
+                <td>Flauta</td>
+            </tr>
+            <tr>
+                <td>Violão</td>
+                <td>Corneta</td>
+            </tr>
+    </table>
+
+    <h3>Cabeçalho vertical</h3>
+    <table border="2">
+        <tr>
+            <th>Livros</th>
+            <td>Arte Moderna</td>
+            <td>Programação</td>
+        </tr>
+        <tr>
+            <th>Quantidade</th>
+            <td>500 Livros</td>
+            <td>800 Livros</td>
+        </tr>
+    </table>
+
+    <h3>Cabeçalho, corpo e um rodapé</h3>
+    <p>
+        Estes elementos criam seções dentro da tabela que podem receber uma função direcionada, útil para a formatação da tabela com muitos dados.
+    </p>
+
+    <table border="2">  <!-- Estrutura com tabelas grandes -->
+        <caption>thead / tfoot / tbody</caption>
+
+        <thead>
+            <tr>
+                <th colspan="2">Coluna 1</th> <!-- Colspan para mesclar colunas -->>
+                <th>Coluna 2</th>
+                <th>Coluna 3</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <td>Resultado 1</td>
+                <td>Resultado 2</td>
+                <td>Resultado 3</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Conteúdo a</td> <!-- para mesclar linhas -->>
+                <td>Conteúdo b</td>
+                <td>Conteúdo c</td>
+            </tr>
+            <tr>
+                <td>Conteúdo d</td>
+                <td>Conteúdo e</td>
+                <td>Conteúdo f</td>
+            </tr>
+            <tr>
+                <td>Conteúdo g</td>
+                <td>Conteúdo h</td>
+                <td>Conteúdo i</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

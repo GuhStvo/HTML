@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="./favicon/galeria-icon.png">
+        <title>Galeria de fotos</title>
+
+        <style>
+            #icon {
+                width: 50px;
+                position: fixed;
+                bottom: 50px;
+                right: 50px;
+            }
+
+            #icon:hover {
+                filter:drop-shadow(3px 8px 9px #000000);
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1 id="inicio">Trabalhando com diversos elementos</h1>
+        <hr>
+        <h3>Filmes do Tim Burton: </h3>
+
+        <p>
+            <a href="#beetlejuice">         <!-- Link  Beetlejuice -->
+                <img src="./img/beetlejuice_mini.jpg" alt="Beetlejuice">
+            </a>
+        
+            <a href="#chepeleiro">          <!-- Link Chepeleiro -->
+                <img src="./img/chapeleiro_mini.jpg" alt="Chapeleiro maluco">
+            </a>
+        
+            <a href="#noiva_cadaver">       <!-- Link Noiva Cadáver -->
+                <img src="./img/noiva_cadaver_mini.jpg" alt="A noiva cadáver">
+            </a>
+        </p>
+
+        <hr>
+
+        <figure id="beetlejuice">           <!-- Beetlejuice -->
+            <img src="./img/beetlejuice.jpg" alt="Beetlejuice" title="Beetlejuice">
+            <figcaption>
+                Beetlejuice em Os Fantasmas Se Divertem.
+            </figcaption>
+        </figure>
+
+        <hr>
+
+        <figure id="chepeleiro">            <!-- Chepeleiro -->
+            <img src="./img/chapeleiro.jpg" alt="Chapeleiro maluto" title="Chapeleiro maluco">
+            <figcaption>
+                O chapeleiro Maluco, no país das maravilhas
+            </figcaption>
+        </figure>
+
+        <hr>
+
+        <figure id="noiva_cadaver">        <!-- Noiva Cadáver -->
+            <img src="./img/noiva_cadaver.jpg" alt="CA noiva cadáver" title="A noiva cadáver">
+            <figcaption>
+                Animação de Tim Burton: A Noiva Cadáver
+            </figcaption>
+        </figure>
+
+        <a href="#inicio"><img id="icon" src="./favicon/top-icon.png" alt=""></a>
+    </body>
+
+</html>
