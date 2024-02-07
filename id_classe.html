@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Trabalhando com Id's e Classes</title>
+
+        <style>
+            /* Esta é a declaração de um ID */
+            #unico {
+                height: 30px;
+                width: 150px;
+            }
+
+            #meio {
+                width: 500px;
+                background-color: rgb(62, 62, 253);
+
+                border: solid yellow 5px;
+            }
+
+            .categoria {
+                height: 50px;   /* Altura */
+                width: 300px;   /* Largura */ 
+
+                background-color: blue;
+                color: #fff;
+
+                padding: 10px; /* Espaçamento interno do elemento */
+                margin: 10px;  /* Espaçamento externo do elemento */
+
+                border: solid red 5px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Seletores ID e Class</h1>
+
+        <hr>
+
+        <h2>Seletores de ID</h2>
+        <p>O seletor ID seleciona o elemento com um atributo específico.</p>
+        <p>Pode ser usado uma única vez na página.</p>
+        <h3>Exemplo:</h3>
+        <p id="unico">Usando uma ID</p>
+
+        <hr>
+
+        <h2>Seletores de Class</h2>
+        <p>O seletor Class seleciona o elemento com um atributo específico.</p>
+        <p>Pode ser usado mais de uma vez na página.</p>
+        <h3>Exemplo:</h3>
+        <p class="categoria">Usando uma class</p>
+        <p class="categoria" id="meio">Usando uma class</p>
+        <p class="categoria">Usando uma class</p>
+        
+    </body>
+
+</html>
