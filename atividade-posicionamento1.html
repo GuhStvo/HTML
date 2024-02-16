@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Atividade posicionamento</title>
+    </head>
+
+    <style>
+
+        body {
+            background-color: aquamarine;
+            height: 100%;
+
+            margin: 0;
+            padding: 15px 150px;
+
+        }
+
+        #container {
+            background-color: white;
+            width: 100%;
+            height: 900px;
+
+            position: relative;
+        }
+
+        .bloco {
+            width: 280px;
+            height: 280px;
+
+            border: 2px solid red;
+
+            text-align: center;
+        }
+    
+        .bloco h1 {
+            background-color: yellow;
+            text-transform: uppercase;
+        }
+
+        .bloco p {
+            padding: 20px;
+            font-family: sans-serif;
+        }
+
+        #bloco_01 {
+            background-color: rgb(151, 88, 210);
+
+            position: absolute;
+        }
+
+        #bloco_02 {
+            background-color: rgb(219, 149, 58);
+
+            position: absolute;
+            right: 0;
+        }
+
+        #bloco_03 {
+            background-color: rgb(102, 229, 106);
+
+            position: absolute;
+            bottom: 0;
+        }
+
+
+
+    </style>
+
+    <body>
+        
+        <div id="container">
+            <div class="bloco" id="bloco_01">
+                <h1>Um</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum atque, earum mollitia quis culpa placeat quae minima facere, delectus itaque illum exercitationem dolor quos fuga hic voluptatum deserunt, error odit?
+                </p>
+            </div>
+            <div class="bloco" id="bloco_02">
+                <h1>Dois</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis molestiae deserunt blanditiis asperiores quos magnam natus sapiente delectus atque tenetur mollitia soluta, at nemo inventore eveniet fugit id exercitationem vitae?
+                </p>
+            </div>
+            <div class="bloco" id="bloco_03">
+                <h1>Tres</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, pariatur suscipit iste dolore odit cupiditate nulla earum hic quos et ea esse aperiam dolorum corporis eum, delectus magni saepe labore.
+                </p>
+            </div>
+        </div>
+
+    </body>
+
+</html>
