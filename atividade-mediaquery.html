@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <style>
+
+        body {
+            font-family: cursive;
+            color: aliceblue;
+
+            background-color: blue;
+        }
+
+        h1, p {
+            text-shadow: 3px 3px 1px black;
+            text-align: center;
+        }
+
+        /*
+        
+        @media screen and (min-width: 320px) {
+            body {
+                background-color: red;
+            }
+        }
+
+        @media screen and (min-width: 720px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        @media screen and (min-width: 1400px) {
+            body {
+                background-color: goldenrod;
+            }
+        }
+        /*
+        
+
+        /*|||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+
+        
+        @media screen and (max-width: 1400px) {
+            body {
+                background-color: goldenrod;
+            }
+        }
+        
+        
+        @media screen and (max-width:720px) {
+            body {
+                background-color: red;
+
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            body {
+                background-color: blue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <p>
+        Renderizando as páginas em midia query
+    </p>
+
+    <h1>
+        Os breakpoints serão o seguinte: <span>320px</span>, <span>720px</span> e <span>1400px</span>.
+    </h1>
+
+
+
+</body>
+</html>
