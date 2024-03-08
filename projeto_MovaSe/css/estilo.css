@@ -255,3 +255,317 @@ iframe {
     display: block;
     padding: 2% 0;
 }
+
+/* Regras para contato */
+ 
+#form-contato{
+    margin: auto;
+    max-width: 700px;
+    width: 95%;
+}
+ 
+#form-contato input, #form-contato textarea{
+    border: solid 2px black;
+    width: 100%;
+    margin: 4px auto;
+}
+ 
+#form-contato input{
+    height: 30px;
+}
+ 
+#form-contato label{
+    font-weight: bold;
+}
+ 
+/* regras dos botões do contato */
+ 
+#form-contato button:hover, #form-contato button:focus{
+    background-color: #ED6D19;
+    cursor: pointer;
+ 
+}
+ 
+#form-contato button{
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+}
+ 
+.conteudo-info p{
+    margin: 5%;
+    text-align: center;
+}
+ 
+.localizacao p{
+    text-align: center;
+}
+ 
+/*Página pacote */
+ 
+#card-pacote{
+    background-color: rgba(6, 99, 46, 0.5);
+    padding: 10px;
+    text-align: center;
+}
+ 
+.card-pacote-info{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1%;
+    box-shadow: grey 1px 1px 5px;
+    margin: 20px auto;
+    max-width: 300px;
+ 
+}
+ 
+.pac-fotos, .pac-reserva{
+    background-color: #A98E12;
+    color: black;
+    width: 80px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+ 
+}
+.pac-flex{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* o gap serve para ajustar o espaçamento entre os objetos que estão em display flex */
+    margin: 15px ;
+   
+}
+ 
+.pac-fotos a:hover, .pac-reserva a:hover, .pac-fotos>a:focus, .pac-reserva>a:focus{
+    background-color: #ecda87;
+    color: white;
+    transition: background-color 1s ;
+    border-radius: 5px;
+}
+ 
+.pac-fotos>a:link,.pac-reserva>a:link, .pac-fotos>a:visited, .pac-reserva>a:visited{
+    color: black;
+    transition: background-color 1s;
+    min-height: inherit;
+    padding: 1px 8px;
+    text-decoration: none;
+   
+}
+ 
+/* Regras para página acessorios */
+ 
+.acessorios{
+ margin: auto;
+ padding: 15px;
+ 
+}
+ 
+.produtos img{
+max-width: 100px;
+border: solid #7f7f80 3px;
+border-radius: 100%;
+box-shadow: gray;
+}
+ 
+.produtos{
+    box-shadow: grey 1px 1px 5px;
+    text-align: center;
+    padding: 20px;
+    width: 220px;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+ 
+.produtos h4{
+    color: #ED6D19;
+    text-transform: uppercase;
+}
+ 
+.img-produto img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+ 
+.acesse{
+    text-transform: uppercase;
+    background-color: #ED6D19;
+    width: 100px;
+    height: 20px;
+    padding: 3px;
+    border-radius:5px ;
+    color: white;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+    #topo{
+        position: sticky;
+        width: 100%;
+        height: 80px;
+        top: 0;
+        z-index: 1000;
+    }
+
+    #topo div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        margin: 5px 0 0 3%;
+        width: 150px;
+    }
+
+    h1 img {
+        margin-top: 18px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #iconMenu {
+        display: none;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .rodape-conteudo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo-rodape, .menu-rodape, .redes {
+        margin: 0 auto;
+    }
+
+    .assinatura p {
+        padding-top: 1%;
+    }
+
+    .card-conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-conteudo>figure img {
+        height: 126px;
+    }
+
+    .acessorios {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produtos {
+        margin: 10px 1%;
+        height: 260px;
+
+        position: relative;
+    }
+
+    .acesse {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    #card-pacote {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-pacote-info {
+        margin: 0 15px;
+        overflow: hidden;
+    }
+
+    .card-pacote-info>img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .card-conteudo figure img {
+        height: 150px;
+        width: 210px;
+    }
+
+    .text-destaque h2 {
+        padding-top: 10px;
+    }
+
+    .text-destaque p {
+        margin-top: 0px;
+    }
+
+    #frase {
+        padding-top: 24px;
+    }
+
+    #frase p {
+        padding-top: 24px;
+        font-size: 1.1em;
+    }
+
+    #conteudo-contato {
+        display: flex;
+        justify-content: center;
+    }
+
+    .conteudo-info article {
+        margin: 15px 5px;
+        padding: 2%;
+    }
+
+    .localizacao iframe {
+        height: 500px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    nav {
+        width: 980px;
+    }
+
+    #topo div {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    #itens {
+        justify-content: flex-end;
+    }
+
+    .rodape-conteudo {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .conteudo {
+        width: 980px;
+    }
+}
