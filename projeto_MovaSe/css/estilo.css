@@ -585,6 +585,16 @@ box-shadow: gray;
     .rodape-conteudo {
         width: 1200px;
         margin: 0 auto;
+        padding: 0;
+        justify-content: unset;
+    }
+
+    #logo-rodape {
+        margin-left: 0;
+    }
+
+    .redes {
+        margin-right: 0;
     }
 
     .conteudo {
