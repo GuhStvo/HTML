@@ -6,6 +6,25 @@
 
 /* Regras Gerais */
 
+.show {
+    display: none;
+}
+
+#itens {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 body {
     font-family: 'Ubunto', sans-serif;
@@ -162,6 +181,9 @@ nav a:hover, nav a:hover, #iconMenu:hover, #iconMenu:hover {
 
 #destaque img {
     border-bottom: dotted #ED6D19 5px;
+    height: 365px;
+    width: 100%;
+    object-fit: cover;
     /* O dotted deixa a borda pontilhada */
 }
 
