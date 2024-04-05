@@ -124,7 +124,9 @@
     position: absolute;
     bottom: 50px;
 
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     width: 100%;
     padding: 0;
@@ -134,28 +136,37 @@
 
     text-align: center;
 }
+
+
 .slick-dots li
 {
     position: relative;
 
     display: inline-block;
 
-    width: 20px;
     height: 20px;
     margin: 0 5px;
     padding: 0;
 
     cursor: pointer;
 }
-.slick-dots li button
+
+.slick-dots ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.slick-dots li button /* Botão oculto */
 {
     font-size: 0;
     line-height: 0;
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    /* height: 35px; */
     padding: 5px;
 
     cursor: pointer;
@@ -178,27 +189,42 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 18px;
+    font-size: 0;
     line-height: 20px;
 
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-    width: 20px;
+    width: fit-content;
     height: 20px;
 
     content: '•';
     text-align: center;
 
+    transition: 500ms; /* Transição de saída */
+    width: 30px;
+    height: 5px;
+    border-radius: 15px;
+    background-color: black;
+
     opacity: .25;
-    color: black;
+    color: rgb(0, 0, 0);
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
 {
+    transition: 700ms;
+    font-size: 0;
+
+    width: 50px;
+    height: 10px;
+    border-radius: 15px;
+    background-color: black;
+    
     opacity: .75;
     color: black;
 }

@@ -426,6 +426,11 @@ box-shadow: gray;
 }
 
 @media screen and (min-width: 700px) {
+    .show {
+        display: block;
+        display: flex;
+    }
+
     #topo{
         position: sticky;
         width: 100%;
